@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <title>Login page</title>
+</head>
+<body>
+    <header> 
+        <div class="navbar bg-orange-600">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <a class="btn btn-ghost text-xl">
+                    <img class="w-10" src="Assests/Logo 2.jpg"
+                  </a>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a href="index.html" class="text-white">Home</a></li>
+                  <li>
+                    <a class="text-white">About</a>
+                    <ul class="p-2">
+                      <li><a class="text-white">Our Products</a></li>
+                      <li><a class="text-white">Our Service</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="text-white  hover:bg-blue-400">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a a href="index.html"class="text-white  hover:bg-blue-400" >Home</a></li>
+                <li>
+                  <details>
+                    <summary class="text-white  hover:bg-blue-400" >About</summary>
+                    <ul class="p-2">
+                      <li><a>Our Products</a></li>
+                      <li><a>Our Service</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a class="text-white  hover:bg-blue-400" >Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn text-white  hover:bg-blue-600 ">Sing Up</a>
+            </div>
+            <div class="px-2">
+              <a href="index2.html" class="btn text-white hover:bg-blue-600">Login</a>
+            </div>
+          </div>
+    </header>
+    <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="text-center lg:text-left">
+            <h1 class="text-5xl font-bold">Login now!</h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi. In deleniti eaque aut repudiandae et a id nisi.
+            </p>
+          </div>
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Email</span>
+                </label>
+                <input type="email" placeholder="email" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Password</span>
+                </label>
+                <input type="password" placeholder="password" class="input input-bordered" required />
+                <label class="label">
+                  <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                </label>
+              </div>
+              <div class="form-control mt-6">
+                <button class="btn btn-primary">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
